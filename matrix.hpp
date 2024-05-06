@@ -1,7 +1,6 @@
 #ifndef matrices
 #define matrices
 
-#include <vector>
 #include <limits>
 #include <cstring>
 
