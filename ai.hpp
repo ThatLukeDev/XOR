@@ -50,6 +50,11 @@ namespace ai {
 	void compute(input<T, outsize>* out, input<T, insize> in, dense<insize, depth> l, bias<T, insize> b) {
 		input<T, insize> working = input<T, insize>();
 		working.data = in.data;
+
+		working.data = l.data * working.data;
+		working.data = working.data + b.data;
+
+		out.data = working.data;
 	}
 }
 

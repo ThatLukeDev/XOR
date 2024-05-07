@@ -21,6 +21,16 @@ public:
 		return arr[x];
 	}
 
+	matrix<T, columns, rows> operator=(matrix<T, columns, rows> p) {
+		for (int x = 0; x < columns; x++) {
+			for (int y = 0; y < rows; y++) {
+				this->arr[x][y] = p.arr[x][y];
+			}
+		}
+
+		return *this;
+	}
+
 	matrix<T, columns, rows> operator+(T val) {
 		matrix<T, columns, rows> out = matrix<T, columns, rows>();
 
