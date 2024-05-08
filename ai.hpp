@@ -22,6 +22,9 @@ public:
 			if (data[0][i] < 0) {
 				data[0][i] = 0;
 			}
+			if (data[0][i] > 1) {
+				data[0][i] = 1;
+			}
 		}
 	}
 };
