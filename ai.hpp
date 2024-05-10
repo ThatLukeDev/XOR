@@ -19,10 +19,10 @@ public:
 
 	void norm() {
 		for (unsigned int i = 0; i < size; i++) {
-			if (data[0][i] < 0) {
+			if (data[0][i] < -4) {
 				data[0][i] = 0;
 			}
-			if (data[0][i] > 1) {
+			if (data[0][i] > 4) {
 				data[0][i] = 1;
 			}
 		}

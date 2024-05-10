@@ -16,7 +16,7 @@ int main() {
 		0
 	};
 	int datasize = 4;
-	int epochs = 100000;
+	int epochs = 1000;
 	double lr = 1;
 
 	dense<2, 100> denselayer = dense<2,100>();
@@ -27,8 +27,6 @@ int main() {
 	double lastmse = 2147483647;
 
 	for (int epoch = 0; epoch < epochs; epoch++) {
-		lr -= 1 / epochs;
-
 		auto newdense = denselayer;
 		auto newbias = biaslayer;
 		newdense.tweak(lr);
