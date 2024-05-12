@@ -16,7 +16,7 @@ int main() {
 		0
 	};
 	int datasize = 4;
-	int epochs = 1000;
+	int epochs = 100;
 	double lr = 1;
 
 	dense<2, 100> denselayer = dense<2,100>();
