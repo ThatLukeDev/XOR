@@ -98,7 +98,7 @@ public:
 		for (int x = 0; x < pcols; x++) {
 			for (int y = 0; y < rows; y++) {
 				for (int i = 0; i < prows; i++) {
-					out[y][x] += (*this)[i][x] * p[y][i];
+					out[x][y] += (*this)[i][x] * p[y][i];
 				}
 			}
 		}
